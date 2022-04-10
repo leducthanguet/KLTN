@@ -165,7 +165,7 @@ def get(logger=None,args=None):
         data[t]={}
         if 'Bing' in dataset:
             data[t]['name']=dataset
-            if 'der' in args.approach or 'a-gem' in args.approach: data[t]['ncla']=3
+            if 'der' in args.baseline or 'a-gem' in args.baseline: data[t]['ncla']=3
             else: data[t]['ncla']=2
         elif 'XuSemEval' in dataset:
             data[t]['name']=dataset
