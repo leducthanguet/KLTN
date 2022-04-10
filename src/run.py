@@ -291,6 +291,8 @@ for t,ncla in taskcla:
             for i in range(acc.shape[0]):
                 print('\t',end='')
                 for j in range(acc.shape[1]):
+                    if i!=0 and i>j and args.baseline == 'one':
+                        acc[i][j] = acc[i-1][j]
                     print('{:5.1f}% '.format(100*acc[i,j]),end='')
                 print()
             print('*'*100)
