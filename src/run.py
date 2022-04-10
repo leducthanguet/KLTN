@@ -63,7 +63,7 @@ elif 'ucl' in args.baseline:
 
 
 else:
-    if 'w2v' in args.baseline:
+    if 'w2v' == args.backbone or 'w2v_as':
         net=import_modules.network.Net(taskcla,embeddings,args=args)
     else:
         net=import_modules.network.Net(taskcla,args=args)

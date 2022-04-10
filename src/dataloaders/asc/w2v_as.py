@@ -120,10 +120,10 @@ def embedding_generation(args):
     # print('word_index: ',word_index)
     print('Found %s unique tokens.' % len(word_index))
 
-    if not path.exists("./dat/absa/w2v_as_embedding"):
+    if not path.exists("./amazon_review_300d/dat/absa/w2v_as_embedding"):
         embeddings_index = {}
         # f = gzip.open('./cc.en.300.vec.gz')
-        f = open('./amazon_review_300d.vec','r')
+        f = open('./amazon_revi                             ew_300d.vec','r')
         for line in f:
             values = line.split()
             word = values[0]
