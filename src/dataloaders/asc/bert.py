@@ -79,6 +79,7 @@ def get(logger=None,args=None):
     print('random_sep: ',random_sep)
     print('domains: ',domains)
 
+
     print('random_sep: ',len(random_sep))
     print('domains: ',len(domains))
 

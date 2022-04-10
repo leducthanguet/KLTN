@@ -109,7 +109,6 @@ if args.print_report:
 
 for t,ncla in taskcla:
 
-
     if args.eval_each_step:
         args.resume_from_aux_file = base_resume_from_aux_file + 'steps'+str(t)
         args.resume_from_file = base_resume_from_file + 'steps'+str(t)
